@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23BFC231A2F5A8197D9EC3BE /* Pods_HAT_App_Basic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391652E321392C95E539DA3A /* Pods_HAT_App_Basic.framework */; };
+		2478A95205C47E691FE0739D /* Pods_HAT_App_BasicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE0FD0176AFC9318A008555 /* Pods_HAT_App_BasicTests.framework */; };
+		608546102328EF0500AC8F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085460F2328EF0500AC8F34 /* AppDelegate.swift */; };
+		608546172328EF0500AC8F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608546152328EF0500AC8F34 /* Main.storyboard */; };
+		608546192328EF0700AC8F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608546182328EF0700AC8F34 /* Assets.xcassets */; };
+		6085461C2328EF0700AC8F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6085461A2328EF0700AC8F34 /* LaunchScreen.storyboard */; };
+		608546272328EF0700AC8F34 /* HAT_App_BasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546262328EF0700AC8F34 /* HAT_App_BasicTests.swift */; };
+		608546322328EF0700AC8F34 /* HAT_App_BasicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546312328EF0700AC8F34 /* HAT_App_BasicUITests.swift */; };
+		6085465B2328F2D900AC8F34 /* AppStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085465A2328F2D900AC8F34 /* AppStatusManager.swift */; };
+		608546632328F40900AC8F34 /* EnterUserDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546622328F40900AC8F34 /* EnterUserDomainViewController.swift */; };
+		608546662328F41300AC8F34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546642328F41300AC8F34 /* LoginViewController.swift */; };
+		608546672328F41300AC8F34 /* LoginAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546652328F41300AC8F34 /* LoginAnimator.swift */; };
+		6085466B2328F41C00AC8F34 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546682328F41C00AC8F34 /* BannerView.swift */; };
+		6085466C2328F41C00AC8F34 /* ChooseHATAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546692328F41C00AC8F34 /* ChooseHATAddressViewController.swift */; };
+		6085466D2328F41C00AC8F34 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085466A2328F41C00AC8F34 /* CreateAccountViewController.swift */; };
+		608546702328F42300AC8F34 /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085466E2328F42300AC8F34 /* CustomAlertController.swift */; };
+		608546712328F42300AC8F34 /* CustomAlertImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085466F2328F42300AC8F34 /* CustomAlertImageViewController.swift */; };
+		608546752328F43000AC8F34 /* HATLoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546722328F42F00AC8F34 /* HATLoginCoordinator.swift */; };
+		608546762328F43000AC8F34 /* HatCreationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546732328F43000AC8F34 /* HatCreationCoordinator.swift */; };
+		608546772328F43000AC8F34 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546742328F43000AC8F34 /* MainCoordinator.swift */; };
+		6085467B2328F4F100AC8F34 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546792328F4F100AC8F34 /* Coordinator.swift */; };
+		6085467C2328F4F100AC8F34 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085467A2328F4F100AC8F34 /* CoordinatorDelegate.swift */; };
+		6085467E2328F51300AC8F34 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085467D2328F51300AC8F34 /* Storyboarded.swift */; };
+		608546842328F53F00AC8F34 /* HATCreationUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546812328F53F00AC8F34 /* HATCreationUIViewController.swift */; };
+		608546852328F53F00AC8F34 /* HATUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546822328F53F00AC8F34 /* HATUIViewController.swift */; };
+		608546882328F57B00AC8F34 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546862328F57B00AC8F34 /* KeychainManager.swift */; };
+		608546892328F57B00AC8F34 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546872328F57B00AC8F34 /* NetworkManager.swift */; };
+		6085468B2328F63200AC8F34 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085468A2328F63200AC8F34 /* KeyboardManager.swift */; };
+		6085468D2328F69000AC8F34 /* UserCredentialsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085468C2328F69000AC8F34 /* UserCredentialsProtocol.swift */; };
+		608546902328F6BF00AC8F34 /* HATAccountServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085468F2328F6BF00AC8F34 /* HATAccountServiceExtension.swift */; };
+		608546932328F6FB00AC8F34 /* HATConfigurationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546922328F6FB00AC8F34 /* HATConfigurationConstants.swift */; };
+		608546952328F72100AC8F34 /* KeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546942328F72100AC8F34 /* KeychainConstants.swift */; };
+		608546972328F7D000AC8F34 /* SafariDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546962328F7D000AC8F34 /* SafariDelegateProtocol.swift */; };
+		608546992328F85E00AC8F34 /* SafariExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546982328F85D00AC8F34 /* SafariExtension.swift */; };
+		6085469B2328FA5F00AC8F34 /* HATLoginServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085469A2328FA5E00AC8F34 /* HATLoginServiceExtension.swift */; };
+		6085469D2328FBF800AC8F34 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085469C2328FBF700AC8F34 /* UIViewExtension.swift */; };
+		6085469F2328FD6300AC8F34 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085469E2328FD6300AC8F34 /* StringExtension.swift */; };
+		608546A12328FDE200AC8F34 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546A02328FDE200AC8F34 /* UIButtonExtension.swift */; };
+		608546A32328FF0D00AC8F34 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546A22328FF0D00AC8F34 /* UIColorExtension.swift */; };
+		608546A52329158800AC8F34 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546A42329158800AC8F34 /* UITextFieldExtension.swift */; };
+		608546A7232915AF00AC8F34 /* UIToolBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546A6232915AE00AC8F34 /* UIToolBarExtension.swift */; };
+		608546A92329163B00AC8F34 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546A82329163B00AC8F34 /* LoadingScreenViewController.swift */; };
+		608546AB2329169E00AC8F34 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546AA2329169E00AC8F34 /* UIViewControllerExtension.swift */; };
+		608546AD2329170E00AC8F34 /* HatCreationErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546AC2329170E00AC8F34 /* HatCreationErrorConstants.swift */; };
+		608546B12329396500AC8F34 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 608546B02329396500AC8F34 /* Config.plist */; };
+		608546B32329574B00AC8F34 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546B22329574B00AC8F34 /* MainViewCoordinator.swift */; };
+		608546B5232957B600AC8F34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608546B4232957B600AC8F34 /* MainViewController.swift */; };
+		D9ECED2DD8333636AB22B225 /* Pods_HAT_App_BasicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803E9573C1937644DCD124E7 /* Pods_HAT_App_BasicUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		608546232328EF0700AC8F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 608546042328EF0500AC8F34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6085460B2328EF0500AC8F34;
+			remoteInfo = "HAT App Basic";
+		};
+		6085462E2328EF0700AC8F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 608546042328EF0500AC8F34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6085460B2328EF0500AC8F34;
+			remoteInfo = "HAT App Basic";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10FC919E7200220B45CE5226 /* Pods-HAT App BasicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAT App BasicTests.debug.xcconfig"; path = "Target Support Files/Pods-HAT App BasicTests/Pods-HAT App BasicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		391652E321392C95E539DA3A /* Pods_HAT_App_Basic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAT_App_Basic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A31C23E0075C153B60D635 /* Pods-HAT App BasicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAT App BasicUITests.release.xcconfig"; path = "Target Support Files/Pods-HAT App BasicUITests/Pods-HAT App BasicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53F6C6CD25D21D2A5A67B2A2 /* Pods-HAT App Basic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAT App Basic.debug.xcconfig"; path = "Target Support Files/Pods-HAT App Basic/Pods-HAT App Basic.debug.xcconfig"; sourceTree = "<group>"; };
+		6085460C2328EF0500AC8F34 /* HAT App Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HAT App Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6085460F2328EF0500AC8F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		608546162328EF0500AC8F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		608546182328EF0700AC8F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6085461B2328EF0700AC8F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6085461D2328EF0700AC8F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608546222328EF0700AC8F34 /* HAT App BasicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HAT App BasicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		608546262328EF0700AC8F34 /* HAT_App_BasicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAT_App_BasicTests.swift; sourceTree = "<group>"; };
+		608546282328EF0700AC8F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6085462D2328EF0700AC8F34 /* HAT App BasicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HAT App BasicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		608546312328EF0700AC8F34 /* HAT_App_BasicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAT_App_BasicUITests.swift; sourceTree = "<group>"; };
+		608546332328EF0700AC8F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6085465A2328F2D900AC8F34 /* AppStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStatusManager.swift; sourceTree = "<group>"; };
+		608546622328F40900AC8F34 /* EnterUserDomainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterUserDomainViewController.swift; sourceTree = "<group>"; };
+		608546642328F41300AC8F34 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		608546652328F41300AC8F34 /* LoginAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAnimator.swift; sourceTree = "<group>"; };
+		608546682328F41C00AC8F34 /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		608546692328F41C00AC8F34 /* ChooseHATAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseHATAddressViewController.swift; sourceTree = "<group>"; };
+		6085466A2328F41C00AC8F34 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		6085466E2328F42300AC8F34 /* CustomAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
+		6085466F2328F42300AC8F34 /* CustomAlertImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertImageViewController.swift; sourceTree = "<group>"; };
+		608546722328F42F00AC8F34 /* HATLoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HATLoginCoordinator.swift; sourceTree = "<group>"; };
+		608546732328F43000AC8F34 /* HatCreationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatCreationCoordinator.swift; sourceTree = "<group>"; };
+		608546742328F43000AC8F34 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		608546792328F4F100AC8F34 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6085467A2328F4F100AC8F34 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
+		6085467D2328F51300AC8F34 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		608546812328F53F00AC8F34 /* HATCreationUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HATCreationUIViewController.swift; sourceTree = "<group>"; };
+		608546822328F53F00AC8F34 /* HATUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HATUIViewController.swift; sourceTree = "<group>"; };
+		608546862328F57B00AC8F34 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		608546872328F57B00AC8F34 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6085468A2328F63200AC8F34 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		6085468C2328F69000AC8F34 /* UserCredentialsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredentialsProtocol.swift; sourceTree = "<group>"; };
+		6085468F2328F6BF00AC8F34 /* HATAccountServiceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HATAccountServiceExtension.swift; sourceTree = "<group>"; };
+		608546922328F6FB00AC8F34 /* HATConfigurationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HATConfigurationConstants.swift; sourceTree = "<group>"; };
+		608546942328F72100AC8F34 /* KeychainConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConstants.swift; sourceTree = "<group>"; };
+		608546962328F7D000AC8F34 /* SafariDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariDelegateProtocol.swift; sourceTree = "<group>"; };
+		608546982328F85D00AC8F34 /* SafariExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariExtension.swift; sourceTree = "<group>"; };
+		6085469A2328FA5E00AC8F34 /* HATLoginServiceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HATLoginServiceExtension.swift; sourceTree = "<group>"; };
+		6085469C2328FBF700AC8F34 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		6085469E2328FD6300AC8F34 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		608546A02328FDE200AC8F34 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		608546A22328FF0D00AC8F34 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		608546A42329158800AC8F34 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		608546A6232915AE00AC8F34 /* UIToolBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIToolBarExtension.swift; sourceTree = "<group>"; };
+		608546A82329163B00AC8F34 /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
+		608546AA2329169E00AC8F34 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		608546AC2329170E00AC8F34 /* HatCreationErrorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatCreationErrorConstants.swift; sourceTree = "<group>"; };
+		608546B02329396500AC8F34 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		608546B22329574B00AC8F34 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
+		608546B4232957B600AC8F34 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		61325C75D9B45E3A8F619307 /* Pods-HAT App BasicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAT App BasicTests.release.xcconfig"; path = "Target Support Files/Pods-HAT App BasicTests/Pods-HAT App BasicTests.release.xcconfig"; sourceTree = "<group>"; };
+		803E9573C1937644DCD124E7 /* Pods_HAT_App_BasicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAT_App_BasicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE0FD0176AFC9318A008555 /* Pods_HAT_App_BasicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAT_App_BasicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D249064F50EAC933F5F42A4 /* Pods-HAT App BasicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAT App BasicUITests.debug.xcconfig"; path = "Target Support Files/Pods-HAT App BasicUITests/Pods-HAT App BasicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB967A8B3E294F881EC4D2A6 /* Pods-HAT App Basic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAT App Basic.release.xcconfig"; path = "Target Support Files/Pods-HAT App Basic/Pods-HAT App Basic.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		608546092328EF0500AC8F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BFC231A2F5A8197D9EC3BE /* Pods_HAT_App_Basic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6085461F2328EF0700AC8F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2478A95205C47E691FE0739D /* Pods_HAT_App_BasicTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6085462A2328EF0700AC8F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9ECED2DD8333636AB22B225 /* Pods_HAT_App_BasicUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		608546032328EF0500AC8F34 = {
+			isa = PBXGroup;
+			children = (
+				6085460E2328EF0500AC8F34 /* HAT App Basic */,
+				608546252328EF0700AC8F34 /* HAT App BasicTests */,
+				608546302328EF0700AC8F34 /* HAT App BasicUITests */,
+				6085460D2328EF0500AC8F34 /* Products */,
+				91540CF5672D4FB8E6BE770B /* Pods */,
+				7BBA02F03AC7C2C03F118122 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6085460D2328EF0500AC8F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6085460C2328EF0500AC8F34 /* HAT App Starter.app */,
+				608546222328EF0700AC8F34 /* HAT App BasicTests.xctest */,
+				6085462D2328EF0700AC8F34 /* HAT App BasicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6085460E2328EF0500AC8F34 /* HAT App Basic */ = {
+			isa = PBXGroup;
+			children = (
+				608546912328F6F100AC8F34 /* Constants */,
+				6085468E2328F6A600AC8F34 /* Extensions */,
+				6085467F2328F52F00AC8F34 /* Subclasses */,
+				608546782328F4E500AC8F34 /* Protocols */,
+				608546592328F2CB00AC8F34 /* Managers */,
+				608546522328F2A900AC8F34 /* Coordinators */,
+				6085464D2328F27700AC8F34 /* PopUps */,
+				608546462328F23500AC8F34 /* SignUp */,
+				6085463F2328F21600AC8F34 /* Login */,
+				6085460F2328EF0500AC8F34 /* AppDelegate.swift */,
+				608546B4232957B600AC8F34 /* MainViewController.swift */,
+				608546152328EF0500AC8F34 /* Main.storyboard */,
+				608546182328EF0700AC8F34 /* Assets.xcassets */,
+				6085461A2328EF0700AC8F34 /* LaunchScreen.storyboard */,
+				6085461D2328EF0700AC8F34 /* Info.plist */,
+				608546B02329396500AC8F34 /* Config.plist */,
+			);
+			path = "HAT App Basic";
+			sourceTree = "<group>";
+		};
+		608546252328EF0700AC8F34 /* HAT App BasicTests */ = {
+			isa = PBXGroup;
+			children = (
+				608546262328EF0700AC8F34 /* HAT_App_BasicTests.swift */,
+				608546282328EF0700AC8F34 /* Info.plist */,
+			);
+			path = "HAT App BasicTests";
+			sourceTree = "<group>";
+		};
+		608546302328EF0700AC8F34 /* HAT App BasicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				608546312328EF0700AC8F34 /* HAT_App_BasicUITests.swift */,
+				608546332328EF0700AC8F34 /* Info.plist */,
+			);
+			path = "HAT App BasicUITests";
+			sourceTree = "<group>";
+		};
+		6085463F2328F21600AC8F34 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				608546622328F40900AC8F34 /* EnterUserDomainViewController.swift */,
+				608546652328F41300AC8F34 /* LoginAnimator.swift */,
+				608546642328F41300AC8F34 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		608546462328F23500AC8F34 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				608546682328F41C00AC8F34 /* BannerView.swift */,
+				608546692328F41C00AC8F34 /* ChooseHATAddressViewController.swift */,
+				6085466A2328F41C00AC8F34 /* CreateAccountViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		6085464D2328F27700AC8F34 /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				6085466E2328F42300AC8F34 /* CustomAlertController.swift */,
+				6085466F2328F42300AC8F34 /* CustomAlertImageViewController.swift */,
+				608546A82329163B00AC8F34 /* LoadingScreenViewController.swift */,
+			);
+			path = PopUps;
+			sourceTree = "<group>";
+		};
+		608546522328F2A900AC8F34 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				608546732328F43000AC8F34 /* HatCreationCoordinator.swift */,
+				608546722328F42F00AC8F34 /* HATLoginCoordinator.swift */,
+				608546742328F43000AC8F34 /* MainCoordinator.swift */,
+				608546B22329574B00AC8F34 /* MainViewCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		608546592328F2CB00AC8F34 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				608546862328F57B00AC8F34 /* KeychainManager.swift */,
+				6085468A2328F63200AC8F34 /* KeyboardManager.swift */,
+				608546872328F57B00AC8F34 /* NetworkManager.swift */,
+				6085465A2328F2D900AC8F34 /* AppStatusManager.swift */,
+				6085467D2328F51300AC8F34 /* Storyboarded.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		608546782328F4E500AC8F34 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				608546792328F4F100AC8F34 /* Coordinator.swift */,
+				6085468C2328F69000AC8F34 /* UserCredentialsProtocol.swift */,
+				608546962328F7D000AC8F34 /* SafariDelegateProtocol.swift */,
+				6085467A2328F4F100AC8F34 /* CoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6085467F2328F52F00AC8F34 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				608546812328F53F00AC8F34 /* HATCreationUIViewController.swift */,
+				608546822328F53F00AC8F34 /* HATUIViewController.swift */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		6085468E2328F6A600AC8F34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6085468F2328F6BF00AC8F34 /* HATAccountServiceExtension.swift */,
+				6085469A2328FA5E00AC8F34 /* HATLoginServiceExtension.swift */,
+				6085469C2328FBF700AC8F34 /* UIViewExtension.swift */,
+				608546982328F85D00AC8F34 /* SafariExtension.swift */,
+				6085469E2328FD6300AC8F34 /* StringExtension.swift */,
+				608546A02328FDE200AC8F34 /* UIButtonExtension.swift */,
+				608546A42329158800AC8F34 /* UITextFieldExtension.swift */,
+				608546A6232915AE00AC8F34 /* UIToolBarExtension.swift */,
+				608546A22328FF0D00AC8F34 /* UIColorExtension.swift */,
+				608546AA2329169E00AC8F34 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		608546912328F6F100AC8F34 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				608546922328F6FB00AC8F34 /* HATConfigurationConstants.swift */,
+				608546942328F72100AC8F34 /* KeychainConstants.swift */,
+				608546AC2329170E00AC8F34 /* HatCreationErrorConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7BBA02F03AC7C2C03F118122 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				391652E321392C95E539DA3A /* Pods_HAT_App_Basic.framework */,
+				8CE0FD0176AFC9318A008555 /* Pods_HAT_App_BasicTests.framework */,
+				803E9573C1937644DCD124E7 /* Pods_HAT_App_BasicUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91540CF5672D4FB8E6BE770B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53F6C6CD25D21D2A5A67B2A2 /* Pods-HAT App Basic.debug.xcconfig */,
+				CB967A8B3E294F881EC4D2A6 /* Pods-HAT App Basic.release.xcconfig */,
+				10FC919E7200220B45CE5226 /* Pods-HAT App BasicTests.debug.xcconfig */,
+				61325C75D9B45E3A8F619307 /* Pods-HAT App BasicTests.release.xcconfig */,
+				8D249064F50EAC933F5F42A4 /* Pods-HAT App BasicUITests.debug.xcconfig */,
+				40A31C23E0075C153B60D635 /* Pods-HAT App BasicUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6085460B2328EF0500AC8F34 /* HAT App Basic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608546362328EF0700AC8F34 /* Build configuration list for PBXNativeTarget "HAT App Basic" */;
+			buildPhases = (
+				7894D5A9955E08BCFF37189A /* [CP] Check Pods Manifest.lock */,
+				608546082328EF0500AC8F34 /* Sources */,
+				608546092328EF0500AC8F34 /* Frameworks */,
+				6085460A2328EF0500AC8F34 /* Resources */,
+				384811CBA64FA5C2133FF803 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HAT App Basic";
+			productName = "HAT App Basic";
+			productReference = 6085460C2328EF0500AC8F34 /* HAT App Starter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		608546212328EF0700AC8F34 /* HAT App BasicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608546392328EF0700AC8F34 /* Build configuration list for PBXNativeTarget "HAT App BasicTests" */;
+			buildPhases = (
+				BA86FE2691ED9B60BC0CBD6F /* [CP] Check Pods Manifest.lock */,
+				6085461E2328EF0700AC8F34 /* Sources */,
+				6085461F2328EF0700AC8F34 /* Frameworks */,
+				608546202328EF0700AC8F34 /* Resources */,
+				560DFD6CFD3223348F77DC31 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				608546242328EF0700AC8F34 /* PBXTargetDependency */,
+			);
+			name = "HAT App BasicTests";
+			productName = "HAT App BasicTests";
+			productReference = 608546222328EF0700AC8F34 /* HAT App BasicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6085462C2328EF0700AC8F34 /* HAT App BasicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6085463C2328EF0700AC8F34 /* Build configuration list for PBXNativeTarget "HAT App BasicUITests" */;
+			buildPhases = (
+				391D16C2CEEBC07A94099AD2 /* [CP] Check Pods Manifest.lock */,
+				608546292328EF0700AC8F34 /* Sources */,
+				6085462A2328EF0700AC8F34 /* Frameworks */,
+				6085462B2328EF0700AC8F34 /* Resources */,
+				1D50B1E0427E66D164F03797 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6085462F2328EF0700AC8F34 /* PBXTargetDependency */,
+			);
+			name = "HAT App BasicUITests";
+			productName = "HAT App BasicUITests";
+			productReference = 6085462D2328EF0700AC8F34 /* HAT App BasicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		608546042328EF0500AC8F34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Dataswift;
+				TargetAttributes = {
+					6085460B2328EF0500AC8F34 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					608546212328EF0700AC8F34 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6085460B2328EF0500AC8F34;
+					};
+					6085462C2328EF0700AC8F34 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6085460B2328EF0500AC8F34;
+					};
+				};
+			};
+			buildConfigurationList = 608546072328EF0500AC8F34 /* Build configuration list for PBXProject "HAT App Basic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 608546032328EF0500AC8F34;
+			productRefGroup = 6085460D2328EF0500AC8F34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6085460B2328EF0500AC8F34 /* HAT App Basic */,
+				608546212328EF0700AC8F34 /* HAT App BasicTests */,
+				6085462C2328EF0700AC8F34 /* HAT App BasicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6085460A2328EF0500AC8F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608546B12329396500AC8F34 /* Config.plist in Resources */,
+				6085461C2328EF0700AC8F34 /* LaunchScreen.storyboard in Resources */,
+				608546192328EF0700AC8F34 /* Assets.xcassets in Resources */,
+				608546172328EF0500AC8F34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608546202328EF0700AC8F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6085462B2328EF0700AC8F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D50B1E0427E66D164F03797 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAT App BasicUITests/Pods-HAT App BasicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAT App BasicUITests/Pods-HAT App BasicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HAT App BasicUITests/Pods-HAT App BasicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		384811CBA64FA5C2133FF803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAT App Basic/Pods-HAT App Basic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAT App Basic/Pods-HAT App Basic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HAT App Basic/Pods-HAT App Basic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		391D16C2CEEBC07A94099AD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAT App BasicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		560DFD6CFD3223348F77DC31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAT App BasicTests/Pods-HAT App BasicTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAT App BasicTests/Pods-HAT App BasicTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HAT App BasicTests/Pods-HAT App BasicTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7894D5A9955E08BCFF37189A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAT App Basic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA86FE2691ED9B60BC0CBD6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAT App BasicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		608546082328EF0500AC8F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6085469D2328FBF800AC8F34 /* UIViewExtension.swift in Sources */,
+				6085469F2328FD6300AC8F34 /* StringExtension.swift in Sources */,
+				608546B32329574B00AC8F34 /* MainViewCoordinator.swift in Sources */,
+				6085466B2328F41C00AC8F34 /* BannerView.swift in Sources */,
+				608546AD2329170E00AC8F34 /* HatCreationErrorConstants.swift in Sources */,
+				608546952328F72100AC8F34 /* KeychainConstants.swift in Sources */,
+				608546772328F43000AC8F34 /* MainCoordinator.swift in Sources */,
+				608546842328F53F00AC8F34 /* HATCreationUIViewController.swift in Sources */,
+				6085467B2328F4F100AC8F34 /* Coordinator.swift in Sources */,
+				608546892328F57B00AC8F34 /* NetworkManager.swift in Sources */,
+				608546A32328FF0D00AC8F34 /* UIColorExtension.swift in Sources */,
+				6085467C2328F4F100AC8F34 /* CoordinatorDelegate.swift in Sources */,
+				608546A12328FDE200AC8F34 /* UIButtonExtension.swift in Sources */,
+				608546672328F41300AC8F34 /* LoginAnimator.swift in Sources */,
+				608546752328F43000AC8F34 /* HATLoginCoordinator.swift in Sources */,
+				6085466C2328F41C00AC8F34 /* ChooseHATAddressViewController.swift in Sources */,
+				608546972328F7D000AC8F34 /* SafariDelegateProtocol.swift in Sources */,
+				608546102328EF0500AC8F34 /* AppDelegate.swift in Sources */,
+				608546A52329158800AC8F34 /* UITextFieldExtension.swift in Sources */,
+				6085467E2328F51300AC8F34 /* Storyboarded.swift in Sources */,
+				608546932328F6FB00AC8F34 /* HATConfigurationConstants.swift in Sources */,
+				608546A7232915AF00AC8F34 /* UIToolBarExtension.swift in Sources */,
+				608546AB2329169E00AC8F34 /* UIViewControllerExtension.swift in Sources */,
+				608546762328F43000AC8F34 /* HatCreationCoordinator.swift in Sources */,
+				608546992328F85E00AC8F34 /* SafariExtension.swift in Sources */,
+				608546A92329163B00AC8F34 /* LoadingScreenViewController.swift in Sources */,
+				6085468D2328F69000AC8F34 /* UserCredentialsProtocol.swift in Sources */,
+				608546B5232957B600AC8F34 /* MainViewController.swift in Sources */,
+				6085465B2328F2D900AC8F34 /* AppStatusManager.swift in Sources */,
+				608546902328F6BF00AC8F34 /* HATAccountServiceExtension.swift in Sources */,
+				608546702328F42300AC8F34 /* CustomAlertController.swift in Sources */,
+				6085469B2328FA5F00AC8F34 /* HATLoginServiceExtension.swift in Sources */,
+				608546632328F40900AC8F34 /* EnterUserDomainViewController.swift in Sources */,
+				6085466D2328F41C00AC8F34 /* CreateAccountViewController.swift in Sources */,
+				608546882328F57B00AC8F34 /* KeychainManager.swift in Sources */,
+				608546662328F41300AC8F34 /* LoginViewController.swift in Sources */,
+				6085468B2328F63200AC8F34 /* KeyboardManager.swift in Sources */,
+				608546852328F53F00AC8F34 /* HATUIViewController.swift in Sources */,
+				608546712328F42300AC8F34 /* CustomAlertImageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6085461E2328EF0700AC8F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608546272328EF0700AC8F34 /* HAT_App_BasicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608546292328EF0700AC8F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608546322328EF0700AC8F34 /* HAT_App_BasicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		608546242328EF0700AC8F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6085460B2328EF0500AC8F34 /* HAT App Basic */;
+			targetProxy = 608546232328EF0700AC8F34 /* PBXContainerItemProxy */;
+		};
+		6085462F2328EF0700AC8F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6085460B2328EF0500AC8F34 /* HAT App Basic */;
+			targetProxy = 6085462E2328EF0700AC8F34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		608546152328EF0500AC8F34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608546162328EF0500AC8F34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6085461A2328EF0700AC8F34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6085461B2328EF0700AC8F34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		608546342328EF0700AC8F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		608546352328EF0700AC8F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		608546372328EF0700AC8F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F6C6CD25D21D2A5A67B2A2 /* Pods-HAT App Basic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HAT App Basic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dataswift.testhatapp;
+				PRODUCT_NAME = "HAT App Starter";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		608546382328EF0700AC8F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB967A8B3E294F881EC4D2A6 /* Pods-HAT App Basic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HAT App Basic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dataswift.testhatapp;
+				PRODUCT_NAME = "HAT App Starter";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6085463A2328EF0700AC8F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10FC919E7200220B45CE5226 /* Pods-HAT App BasicTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HAT App BasicTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dataswift.HAT-App-BasicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HAT App Basic.app/HAT App Basic";
+			};
+			name = Debug;
+		};
+		6085463B2328EF0700AC8F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61325C75D9B45E3A8F619307 /* Pods-HAT App BasicTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HAT App BasicTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dataswift.HAT-App-BasicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HAT App Basic.app/HAT App Basic";
+			};
+			name = Release;
+		};
+		6085463D2328EF0700AC8F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D249064F50EAC933F5F42A4 /* Pods-HAT App BasicUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HAT App BasicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dataswift.HAT-App-BasicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HAT App Basic";
+			};
+			name = Debug;
+		};
+		6085463E2328EF0700AC8F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A31C23E0075C153B60D635 /* Pods-HAT App BasicUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HAT App BasicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dataswift.HAT-App-BasicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HAT App Basic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		608546072328EF0500AC8F34 /* Build configuration list for PBXProject "HAT App Basic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608546342328EF0700AC8F34 /* Debug */,
+				608546352328EF0700AC8F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608546362328EF0700AC8F34 /* Build configuration list for PBXNativeTarget "HAT App Basic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608546372328EF0700AC8F34 /* Debug */,
+				608546382328EF0700AC8F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608546392328EF0700AC8F34 /* Build configuration list for PBXNativeTarget "HAT App BasicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6085463A2328EF0700AC8F34 /* Debug */,
+				6085463B2328EF0700AC8F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6085463C2328EF0700AC8F34 /* Build configuration list for PBXNativeTarget "HAT App BasicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6085463D2328EF0700AC8F34 /* Debug */,
+				6085463E2328EF0700AC8F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 608546042328EF0500AC8F34 /* Project object */;
+}

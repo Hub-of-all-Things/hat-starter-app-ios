@@ -1,0 +1,6 @@
+framework module HAT_API_for_iOS {
+  umbrella header "HAT-API-for-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_HAT_App_Basic {
+  umbrella header "Pods-HAT App Basic-umbrella.h"
+
+  export *
+  module * { export * }
+}
