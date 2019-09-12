@@ -35,6 +35,8 @@ Navigate to the project's root folder and install the dependecies
 $ pod install
 ```
 
+Last step is to create a new `Property List` named `Config` and add a single property named `dbUrl`. That property is a type of `String` and it has to be your endpoint to check for existing HATs in your service. If you don't do that the app will crash upon Log in
+
 That's it, you can now build and run the application
 
 ## License
